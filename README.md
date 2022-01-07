@@ -8,4 +8,4 @@ This is a sample app(For beginners - App #1) built using Jetpack Compose. It is 
  
  Here, the state of Button click (isClicked) toggles each time button is clicked. 
  
- UI for Vertical List - "showing profiles" is driven by State of Button. 
+ UI for Vertical List - "Showing profiles" is driven by State of Button. 
