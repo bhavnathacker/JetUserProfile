@@ -46,7 +46,7 @@ fun UserProfile() {
         Card(
             modifier = Modifier.padding(8.dp),
             elevation = 4.dp,
-            shape = RoundedCornerShape(corner = CornerSize(8.dp))
+            shape = MaterialTheme.shapes.medium
         ) {
             Column(
                 verticalArrangement = Arrangement.Top,
@@ -86,9 +86,7 @@ fun Profile(entries: List<ProfileEntry>) {
         modifier = Modifier
             .fillMaxWidth()
             .fillMaxHeight()
-            .padding(8.dp),
-        shape = RoundedCornerShape(corner = CornerSize(4.dp)),
-        border = BorderStroke(width = 2.dp, color = Color.LightGray)
+            .padding(8.dp)
     ) {
         LazyColumn {
             items(entries) { entry ->
@@ -125,7 +123,6 @@ private fun UserImage(modifier: Modifier = Modifier) {
         modifier = modifier
             .padding(8.dp),
         shape = CircleShape,
-        border = BorderStroke(1.dp, Color.Gray),
         elevation = 2.dp
     ) {
         Image(
